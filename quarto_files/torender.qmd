@@ -1,0 +1,36 @@
+---
+title: "Nextflow quarto test"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+format:
+  html:
+    code-fold: true
+    toc: true
+    toc_float:
+      collapsed: true
+    embed-resources: true
+params:
+  dataset: 1
+---
+
+
+```{r, include = FALSE}
+
+knitr::opts_chunk$set(message    = NA,
+                      warning    = NA)
+
+```
+
+```{r}
+
+message(getwd())
+message("Read source code")
+source("../r_code/helpercode.R")
+
+```
+
+```{r}
+
+showPlot()
+
+```
+
