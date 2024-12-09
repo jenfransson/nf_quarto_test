@@ -10,7 +10,7 @@ workflow {
 }
 
 process RENDER_QMD_01 {
-  publishDir "results/"
+  publishDir "quarto_files/"
   
   input:
   path(qmd)
@@ -18,7 +18,7 @@ process RENDER_QMD_01 {
   path(code)
   
   output:
-  path("quarto_files/torender.html")
+  path("torender.html")
   
   script:
   """
