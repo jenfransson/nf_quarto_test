@@ -22,6 +22,23 @@ knitr::opts_chunk$set(message    = NA,
 
 ```{r}
 
+
+message(getwd())
+message("Read local source code")
+source("localhelpercode.R")
+
+
+```
+
+
+```{r}
+
+showPlot_local()
+
+```
+
+```{r}
+
 message(getwd())
 message("Read source code")
 source("../r_code/helpercode.R")
